@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인증현황 — 동양제지산업</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><a href="mailto:d.yang@daum.net">d.yang@daum.net</a><span class="topbar__sep">|</span><a href="tel:031-498-6821">TEL. 031-498-6821</a></div>
+  <nav class="global-nav">
+    <a href="index.html" class="global-nav__logo"><span class="global-nav__logo-en">DONGYANG PAPER</span><span class="global-nav__logo-kr">동양제지산업</span></a>
+    <ul class="global-nav__links">
+      <li><a href="about.html">회사소개</a></li><li><a href="philosophy.html">경영이념</a></li><li><a href="products.html">제품소개</a></li><li><a href="certifications.html">인증현황</a></li><li><a href="business.html">사업현황</a></li><li><a href="networks.html">글로벌 네트워크</a></li><li><a href="contact.html">문의</a></li>
+    </ul>
+    <a href="contact.html" class="global-nav__contact">문의하기</a>
+    <button class="global-nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="메뉴"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="about.html" onclick="toggleMenu()">회사소개</a><a href="philosophy.html" onclick="toggleMenu()">경영이념</a><a href="products.html" onclick="toggleMenu()">제품소개</a><a href="certifications.html" onclick="toggleMenu()">인증현황</a><a href="business.html" onclick="toggleMenu()">사업현황</a><a href="networks.html" onclick="toggleMenu()">글로벌 네트워크</a><a href="contact.html" onclick="toggleMenu()">문의</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero__inner">
+      <div class="page-hero__breadcrumb"><a href="index.html">Home</a><span>›</span><span>인증현황</span></div>
+      <h1 class="page-hero__headline">인증현황</h1>
+    </div>
+  </div>
+
+  <div class="page-tabs">
+    <div class="page-tabs__inner">
+      <a href="about.html">회사 개요</a>
+      <a href="philosophy.html">경영이념</a>
+      <a href="certifications.html" class="active">인증현황</a>
+    </div>
+  </div>
+
+  <section class="section section--light">
+    <div class="section__inner">
+      <div class="section__header fade-up">
+        <p class="section__label">Certifications</p>
+        <h2 class="section__title">보유 인증</h2>
+        <div class="divider"></div>
+        <p class="section__sub">국제 기준에 부합하는 품질·환경 관리 시스템으로 신뢰할 수 있는 제품을 공급합니다.</p>
+      </div>
+      <div class="cert-grid fade-up">
+        <div class="cert-card">
+          <span class="cert-card__badge">ISO 9001</span>
+          <p class="cert-card__title">품질경영시스템 인증</p>
+          <p class="cert-card__desc">품질경영시스템에 관한 국제규격으로, 고객에게 제공되는 제품·서비스 체계가 규정된 요구사항을 만족하고 지속적으로 유지·관리되고 있음을 인증하는 제도입니다.</p>
+        </div>
+        <div class="cert-card">
+          <span class="cert-card__badge">ISO 14001</span>
+          <p class="cert-card__title">환경경영시스템 인증</p>
+          <p class="cert-card__desc">환경경영시스템의 적합성과 실행 여부를 평가받아, 신뢰할 수 있는 환경법규 준수에 의한 제품과 서비스를 공급하는 체제를 갖추어 운용성을 보증합니다.</p>
+        </div>
+        <div class="cert-card">
+          <span class="cert-card__badge">CLEAN</span>
+          <p class="cert-card__title">CLEAN 사업장 인정</p>
+          <p class="cert-card__desc">한국산업안전보건공단 인정서로, 안전하고 쾌적한 사업장에게 수여되는 인증입니다. 임직원의 안전하고 건강한 근무 환경 조성에 힘쓰고 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="section__inner">
+      <div class="section__header fade-up">
+        <p class="section__label">Quality Commitment</p>
+        <h2 class="section__title">인증이 의미하는 것</h2>
+        <div class="divider"></div>
+      </div>
+      <table class="overview-table fade-up">
+        <tr><th>일관된 품질</th><td>ISO 9001 기반의 표준화된 공정으로 로트별 편차 없는 균일한 제품을 공급합니다.</td></tr>
+        <tr><th>환경 규정 준수</th><td>ISO 14001로 환경법규를 철저히 준수하며 지속 가능한 제조 환경을 유지합니다.</td></tr>
+        <tr><th>안전한 작업 환경</th><td>CLEAN 사업장 인정을 통해 직원과 파트너 모두에게 신뢰받는 기업을 지향합니다.</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer__inner"><div class="footer__top"><div><p class="footer__brand">동양제지산업 DONGYANG PAPER INDUSTRIAL</p><p class="footer__tagline">대표이사: 황승주 &nbsp;|&nbsp; 경기도 안산시 단원구 번영로32번길 29<br>TEL. 031-498-6821 &nbsp;|&nbsp; E-mail. d.yang@daum.net<br>Copyright &copy; 2024 (주)동양제지산업. All rights reserved.</p></div><div><p class="footer__col-title">회사</p><ul class="footer__links"><li><a href="about.html">회사소개</a></li><li><a href="philosophy.html">경영이념</a></li><li><a href="certifications.html">인증현황</a></li></ul></div><div><p class="footer__col-title">제품</p><ul class="footer__links"><li><a href="products.html">Kraft Paper</a></li><li><a href="products.html">PVC</a></li><li><a href="products.html">Film</a></li></ul></div><div><p class="footer__col-title">문의</p><ul class="footer__links"><li><a href="contact.html">온라인 문의</a></li><li><a href="networks.html">글로벌 네트워크</a></li><li><a href="business.html">사업현황</a></li></ul></div></div><p class="footer__legal">(주)동양제지산업 &nbsp;|&nbsp; 베트남 법인: dongyang@dyp2015.com</p></div></footer>
+
+  <script src="nav.js"></script>
+  <script>initNav('certifications');</script>
+</body>
+</html>

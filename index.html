@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동양제지산업 — DONGYANG PAPER INDUSTRIAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <a href="mailto:d.yang@daum.net">d.yang@daum.net</a>
+    <span class="topbar__sep">|</span>
+    <a href="tel:031-498-6821">TEL. 031-498-6821</a>
+  </div>
+
+  <!-- Nav -->
+  <nav class="global-nav">
+    <a href="index.html" class="global-nav__logo">
+      <span class="global-nav__logo-en">DONGYANG PAPER</span>
+      <span class="global-nav__logo-kr">동양제지산업</span>
+    </a>
+    <ul class="global-nav__links">
+      <li><a href="about.html">회사소개</a></li>
+      <li><a href="philosophy.html">경영이념</a></li>
+      <li><a href="products.html">제품소개</a></li>
+      <li><a href="certifications.html">인증현황</a></li>
+      <li><a href="business.html">사업현황</a></li>
+      <li><a href="networks.html">글로벌 네트워크</a></li>
+      <li><a href="contact.html">문의</a></li>
+    </ul>
+    <a href="contact.html" class="global-nav__contact">문의하기</a>
+    <button class="global-nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="메뉴">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="about.html" onclick="toggleMenu()">회사소개</a>
+    <a href="philosophy.html" onclick="toggleMenu()">경영이념</a>
+    <a href="products.html" onclick="toggleMenu()">제품소개</a>
+    <a href="certifications.html" onclick="toggleMenu()">인증현황</a>
+    <a href="business.html" onclick="toggleMenu()">사업현황</a>
+    <a href="networks.html" onclick="toggleMenu()">글로벌 네트워크</a>
+    <a href="contact.html" onclick="toggleMenu()">문의</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="home-hero">
+    <div class="home-hero__inner">
+      <span class="home-hero__tag fade-up">Since 2002 · 국내 시장 점유율 1위</span>
+      <h1 class="home-hero__headline fade-up">FPCB·PCB 공정 소재<br>전문 기업</h1>
+      <p class="home-hero__sub fade-up">특수지류 및 지류가공 분야의 선두 기업<br>(주)동양제지산업에 오신 것을 환영합니다.</p>
+      <div class="home-hero__ctas fade-up">
+        <a href="about.html" class="btn btn--white btn--lg">회사소개</a>
+        <a href="products.html" class="btn btn--white-outline btn--lg">제품 보기</a>
+      </div>
+      <div class="home-hero__badges fade-up">
+        <div class="home-hero__badge">
+          <span class="home-hero__badge-num">40<small style="font-size:18px">+</small></span>
+          <span class="home-hero__badge-label">공급 파트너사</span>
+        </div>
+        <div class="home-hero__badge-sep"></div>
+        <div class="home-hero__badge">
+          <span class="home-hero__badge-num">#1</span>
+          <span class="home-hero__badge-label">국내 시장 점유율</span>
+        </div>
+        <div class="home-hero__badge-sep"></div>
+        <div class="home-hero__badge">
+          <span class="home-hero__badge-num">3</span>
+          <span class="home-hero__badge-label">글로벌 거점국</span>
+        </div>
+        <div class="home-hero__badge-sep"></div>
+        <div class="home-hero__badge">
+          <span class="home-hero__badge-num">22<small style="font-size:18px">년</small></span>
+          <span class="home-hero__badge-label">업력</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu section -->
+  <section class="section section--gray">
+    <div class="section__inner">
+      <div class="section__header fade-up">
+        <p class="section__label">Services</p>
+        <h2 class="section__title">주요 서비스 바로가기</h2>
+        <div class="divider"></div>
+        <p class="section__sub">회사 정보, 제품 소개, 인증 현황 등 원하시는 정보를 바로 확인하세요.</p>
+      </div>
+      <div class="menu-grid fade-up">
+        <a href="about.html" class="menu-card">
+          <span class="menu-card__num">01</span>
+          <p class="menu-card__title">회사소개</p>
+          <p class="menu-card__desc">2002년 설립 이래 국내외 특수지류 분야의 선두 기업으로 성장해온 동양제지산업의 역사와 현황</p>
+          <span class="menu-card__arrow">자세히 보기 →</span>
+        </a>
+        <a href="philosophy.html" class="menu-card">
+          <span class="menu-card__num">02</span>
+          <p class="menu-card__title">경영이념</p>
+          <p class="menu-card__desc">품질·원칙·서비스를 핵심 가치로 삼는 동양제지산업의 경영 철학과 비전</p>
+          <span class="menu-card__arrow">자세히 보기 →</span>
+        </a>
+        <a href="products.html" class="menu-card">
+          <span class="menu-card__num">03</span>
+          <p class="menu-card__title">제품소개</p>
+          <p class="menu-card__desc">FPCB·PCB 공정용 Kraft Paper, PVC, Film 등 고품질 특수 소재 전 제품 라인업</p>
+          <span class="menu-card__arrow">자세히 보기 →</span>
+        </a>
+        <a href="certifications.html" class="menu-card">
+          <span class="menu-card__num">04</span>
+          <p class="menu-card__title">인증현황</p>
+          <p class="menu-card__desc">ISO 9001 품질경영, ISO 14001 환경경영, CLEAN 사업장 인정 등 공인된 신뢰</p>
+          <span class="menu-card__arrow">자세히 보기 →</span>
+        </a>
+        <a href="business.html" class="menu-card">
+          <span class="menu-card__num">05</span>
+          <p class="menu-card__title">사업현황</p>
+          <p class="menu-card__desc">영풍전자, 인터플렉스 등 40개 이상의 국내외 FPCB·PCB 기업과의 공급 현황</p>
+          <span class="menu-card__arrow">자세히 보기 →</span>
+        </a>
+        <a href="networks.html" class="menu-card">
+          <span class="menu-card__num">06</span>
+          <p class="menu-card__title">글로벌 네트워크</p>
+          <p class="menu-card__desc">한국 본사, 일본 공급망, 베트남 현지법인으로 구성된 3개국 글로벌 공급 체계</p>
+          <span class="menu-card__arrow">자세히 보기 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About snippet -->
+  <section class="section section--light">
+    <div class="section__inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+      <div class="fade-up">
+        <p class="section__label">About Us</p>
+        <h2 class="section__title">특수지류 분야<br>20년 이상의 전문성</h2>
+        <div class="divider"></div>
+        <p style="font-size: 14px; color: var(--ink-sub); line-height: 1.9; margin-bottom: 20px;">
+          (주)동양제지산업은 2002년 설립 이래 FPCB·PCB 생산공정에 사용되는 특수지류 및 지류가공 제품을 전문으로 생산·공급해왔습니다.<br><br>
+          국내 시장 점유율 1위를 바탕으로 한국·일본·베트남에 걸친 글로벌 공급망을 구축하였으며, ISO 9001·ISO 14001 인증을 통해 품질과 환경 경영을 실천하고 있습니다.
+        </p>
+        <a href="about.html" class="btn btn--outline">회사소개 자세히 보기</a>
+      </div>
+      <div class="fade-up">
+        <table class="overview-table">
+          <tr>
+            <th>회사명</th>
+            <td>(주)동양제지산업</td>
+          </tr>
+          <tr>
+            <th>대표이사</th>
+            <td>황 승 주</td>
+          </tr>
+          <tr>
+            <th>설립일</th>
+            <td>2002년 06월 01일<br><span style="font-size:12px; color: var(--ink-muted);">법인: 2007년 03월 08일</span></td>
+          </tr>
+          <tr>
+            <th>주요사업</th>
+            <td>특수지류 및 지류가공</td>
+          </tr>
+          <tr>
+            <th>본사</th>
+            <td>경기도 안산시 단원구 번영로32번길 29</td>
+          </tr>
+          <tr>
+            <th>해외법인</th>
+            <td>HAI DUONG PROVINCE, VIETNAM<br><span style="font-size:12px; color: var(--ink-muted);">2015년 설립</span></td>
+          </tr>
+          <tr>
+            <th>인증</th>
+            <td>ISO 9001 · ISO 14001 · CLEAN 사업장</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <div class="stats-bar fade-up">
+    <div class="stats-bar__item">
+      <p class="stats-bar__num">40<span style="font-size: 24px;">+</span></p>
+      <p class="stats-bar__label">국내외 공급 파트너사</p>
+    </div>
+    <div class="stats-bar__item">
+      <p class="stats-bar__num">#1</p>
+      <p class="stats-bar__label">국내 시장 점유율</p>
+    </div>
+    <div class="stats-bar__item">
+      <p class="stats-bar__num">3개국</p>
+      <p class="stats-bar__label">글로벌 공급 네트워크</p>
+    </div>
+  </div>
+
+  <!-- Products snippet -->
+  <section class="section section--dark">
+    <div class="section__inner">
+      <div class="section__header fade-up">
+        <p class="section__label">Products</p>
+        <h2 class="section__title">주요 제품</h2>
+        <div class="divider"></div>
+        <p class="section__sub">FPCB·PCB HOT PRESS 공정에 최적화된 고품질 특수 소재를 공급합니다.</p>
+      </div>
+      <div class="products-grid fade-up">
+        <div class="product-card">
+          <p class="product-card__label">Kraft Paper</p>
+          <h3 class="product-card__title">기판지</h3>
+          <p class="product-card__desc">HOT 프레스 작업 시 유분흡수 및 완충작용. 다양한 규격 SIZE 양산 가능.</p>
+          <div class="product-card__specs">
+            <span class="spec-chip">190G</span>
+            <span class="spec-chip">98G</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <p class="product-card__label">PVC</p>
+          <h3 class="product-card__title">PVC 시트</h3>
+          <p class="product-card__desc">HOT 프레스 작업 시 완충작용. 다양한 두께 규격으로 고객 맞춤 공급.</p>
+          <div class="product-card__specs">
+            <span class="spec-chip">0.21T</span>
+            <span class="spec-chip">0.25T</span>
+            <span class="spec-chip">0.3T</span>
+            <span class="spec-chip">0.4T</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <p class="product-card__label">Film</p>
+          <h3 class="product-card__title">이형 필름</h3>
+          <p class="product-card__desc">HOT 프레스 작업 시 완충작용. 정밀 회로 패턴 구현에 기여.</p>
+          <div class="product-card__specs">
+            <span class="spec-chip">25μm</span>
+            <span class="spec-chip">45μm</span>
+            <span class="spec-chip">50μm</span>
+            <span class="spec-chip">60μm</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 32px;" class="fade-up">
+        <a href="products.html" class="btn btn--white-outline">제품 전체 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="section section--gray">
+    <div class="section__inner" style="text-align: center;" class="fade-up">
+      <p class="section__label" style="text-align: center;">Contact</p>
+      <h2 class="section__title" style="text-align: center; margin-bottom: 12px;">제품 문의 및 파트너십</h2>
+      <div class="divider" style="margin: 12px auto 20px;"></div>
+      <p style="font-size: 15px; color: var(--ink-sub); margin-bottom: 28px;">제품 사양, 견적 요청, 공급 계약에 대해 언제든지 문의해 주세요.</p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;" class="fade-up">
+        <a href="contact.html" class="btn btn--primary btn--lg">문의하기</a>
+        <a href="tel:031-498-6821" class="btn btn--outline btn--lg">031-498-6821</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand">동양제지산업 DONGYANG PAPER INDUSTRIAL</p>
+          <p class="footer__tagline">
+            대표이사: 황승주 &nbsp;|&nbsp; 경기도 안산시 단원구 번영로32번길 29<br>
+            TEL. 031-498-6821 &nbsp;|&nbsp; FAX. 031-488-8919 &nbsp;|&nbsp; E-mail. d.yang@daum.net<br>
+            Copyright &copy; 2024 (주)동양제지산업. All rights reserved.
+          </p>
+        </div>
+        <div>
+          <p class="footer__col-title">회사</p>
+          <ul class="footer__links">
+            <li><a href="about.html">회사소개</a></li>
+            <li><a href="philosophy.html">경영이념</a></li>
+            <li><a href="certifications.html">인증현황</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">제품</p>
+          <ul class="footer__links">
+            <li><a href="products.html">Kraft Paper</a></li>
+            <li><a href="products.html">PVC</a></li>
+            <li><a href="products.html">Film</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">문의</p>
+          <ul class="footer__links">
+            <li><a href="contact.html">온라인 문의</a></li>
+            <li><a href="networks.html">글로벌 네트워크</a></li>
+            <li><a href="business.html">사업현황</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__legal">
+        (주)동양제지산업 사업자등록번호 문의 요망 &nbsp;|&nbsp; 베트남 법인: dongyang@dyp2015.com
+      </p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>initNav('index');</script>
+</body>
+</html>

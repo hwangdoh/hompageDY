@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문의하기 — 동양제지산업</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-label { display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+    .form-row { margin-bottom: 18px; }
+    .form-input, .form-textarea, .form-select {
+      width: 100%; background: var(--canvas); border: 1px solid var(--hairline); border-radius: 4px;
+      color: var(--ink); font-family: inherit; font-size: 14px; padding: 10px 14px; outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--primary); }
+    .form-textarea { min-height: 130px; resize: vertical; }
+    .form-submit {
+      width: 100%; background: var(--primary); color: #fff; font-family: inherit;
+      font-size: 15px; font-weight: 600; padding: 13px 22px; border-radius: 4px;
+      border: none; cursor: pointer; transition: background 0.15s;
+    }
+    .form-submit:hover { background: #15326e; }
+    .form-note { font-size: 12px; color: var(--ink-muted); margin-top: 10px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="topbar"><a href="mailto:d.yang@daum.net">d.yang@daum.net</a><span class="topbar__sep">|</span><a href="tel:031-498-6821">TEL. 031-498-6821</a></div>
+  <nav class="global-nav">
+    <a href="index.html" class="global-nav__logo"><span class="global-nav__logo-en">DONGYANG PAPER</span><span class="global-nav__logo-kr">동양제지산업</span></a>
+    <ul class="global-nav__links">
+      <li><a href="about.html">회사소개</a></li><li><a href="philosophy.html">경영이념</a></li><li><a href="products.html">제품소개</a></li><li><a href="certifications.html">인증현황</a></li><li><a href="business.html">사업현황</a></li><li><a href="networks.html">글로벌 네트워크</a></li><li><a href="contact.html">문의</a></li>
+    </ul>
+    <a href="contact.html" class="global-nav__contact">문의하기</a>
+    <button class="global-nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="메뉴"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="about.html" onclick="toggleMenu()">회사소개</a><a href="philosophy.html" onclick="toggleMenu()">경영이념</a><a href="products.html" onclick="toggleMenu()">제품소개</a><a href="certifications.html" onclick="toggleMenu()">인증현황</a><a href="business.html" onclick="toggleMenu()">사업현황</a><a href="networks.html" onclick="toggleMenu()">글로벌 네트워크</a><a href="contact.html" onclick="toggleMenu()">문의</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero__inner">
+      <div class="page-hero__breadcrumb"><a href="index.html">Home</a><span>›</span><span>문의하기</span></div>
+      <h1 class="page-hero__headline">문의하기</h1>
+    </div>
+  </div>
+
+  <section class="section section--light">
+    <div class="section__inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+
+      <!-- 연락처 정보 -->
+      <div class="fade-up">
+        <div class="section__header">
+          <p class="section__label">Contact Info</p>
+          <h2 class="section__title">연락처</h2>
+          <div class="divider"></div>
+        </div>
+        <table class="overview-table" style="margin-bottom: 28px;">
+          <tr><th>한국 본사</th><td>경기도 안산시 단원구 번영로32번길 29</td></tr>
+          <tr><th>전화</th><td><a href="tel:031-498-6821" style="color: var(--primary); text-decoration: none;">031-498-6821</a></td></tr>
+          <tr><th>팩스</th><td>031-488-8919</td></tr>
+          <tr><th>이메일</th><td><a href="mailto:d.yang@daum.net" style="color: var(--primary); text-decoration: none;">d.yang@daum.net</a></td></tr>
+        </table>
+        <table class="overview-table">
+          <tr><th>베트남 법인</th><td>HAI DUONG PROVINCE, VIETNAM</td></tr>
+          <tr><th>전화</th><td><a href="tel:03203785863" style="color: var(--primary); text-decoration: none;">032-0378-5863</a></td></tr>
+          <tr><th>이메일</th><td><a href="mailto:dongyang@dyp2015.com" style="color: var(--primary); text-decoration: none;">dongyang@dyp2015.com</a></td></tr>
+        </table>
+        <div style="margin-top: 24px; padding: 18px; background: var(--canvas-light); border-left: 3px solid var(--primary); border-radius: 0 4px 4px 0;">
+          <p style="font-size: 13px; color: var(--ink-sub); line-height: 1.7;">
+            <strong style="color: var(--ink);">업무시간</strong><br>
+            평일 09:00 – 18:00<br>
+            점심 12:00 – 13:00<br>
+            토·일·공휴일 휴무
+          </p>
+        </div>
+      </div>
+
+      <!-- 문의 양식 -->
+      <div class="fade-up">
+        <div class="section__header">
+          <p class="section__label">Online Inquiry</p>
+          <h2 class="section__title">온라인 문의</h2>
+          <div class="divider"></div>
+        </div>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <label class="form-label" for="name">회사명 / 이름 <span style="color: #e53e3e;">*</span></label>
+            <input class="form-input" type="text" id="name" placeholder="(주)ABC / 홍길동" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="email">이메일 <span style="color: #e53e3e;">*</span></label>
+            <input class="form-input" type="email" id="email" placeholder="example@company.com" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="phone">연락처</label>
+            <input class="form-input" type="tel" id="phone" placeholder="010-0000-0000">
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="type">문의 유형</label>
+            <select class="form-select" id="type">
+              <option value="product">제품 문의</option>
+              <option value="quote">견적 요청</option>
+              <option value="partnership">파트너십 / 협력</option>
+              <option value="other">기타</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="message">문의 내용 <span style="color: #e53e3e;">*</span></label>
+            <textarea class="form-textarea" id="message" placeholder="문의하실 내용을 입력해 주세요." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">문의 보내기</button>
+          <p class="form-note">영업일 기준 1–2일 이내 답변 드립니다.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer__inner"><div class="footer__top"><div><p class="footer__brand">동양제지산업 DONGYANG PAPER INDUSTRIAL</p><p class="footer__tagline">대표이사: 황승주 &nbsp;|&nbsp; 경기도 안산시 단원구 번영로32번길 29<br>TEL. 031-498-6821 &nbsp;|&nbsp; E-mail. d.yang@daum.net<br>Copyright &copy; 2024 (주)동양제지산업. All rights reserved.</p></div><div><p class="footer__col-title">회사</p><ul class="footer__links"><li><a href="about.html">회사소개</a></li><li><a href="philosophy.html">경영이념</a></li><li><a href="certifications.html">인증현황</a></li></ul></div><div><p class="footer__col-title">제품</p><ul class="footer__links"><li><a href="products.html">Kraft Paper</a></li><li><a href="products.html">PVC</a></li><li><a href="products.html">Film</a></li></ul></div><div><p class="footer__col-title">문의</p><ul class="footer__links"><li><a href="contact.html">온라인 문의</a></li><li><a href="networks.html">글로벌 네트워크</a></li><li><a href="business.html">사업현황</a></li></ul></div></div><p class="footer__legal">(주)동양제지산업 &nbsp;|&nbsp; 베트남 법인: dongyang@dyp2015.com</p></div></footer>
+
+  <script src="nav.js"></script>
+  <script>
+    initNav('contact');
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = '전송 완료 ✓';
+      btn.style.background = '#276749';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = '문의 보내기';
+        btn.style.background = '';
+        btn.disabled = false;
+        e.target.reset();
+      }, 3000);
+    }
+  </script>
+  <style>
+    @media (max-width: 768px) {
+      .section__inner[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</body>
+</html>

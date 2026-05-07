@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품소개 — 동양제지산업</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><a href="mailto:d.yang@daum.net">d.yang@daum.net</a><span class="topbar__sep">|</span><a href="tel:031-498-6821">TEL. 031-498-6821</a></div>
+  <nav class="global-nav">
+    <a href="index.html" class="global-nav__logo"><span class="global-nav__logo-en">DONGYANG PAPER</span><span class="global-nav__logo-kr">동양제지산업</span></a>
+    <ul class="global-nav__links">
+      <li><a href="about.html">회사소개</a></li><li><a href="philosophy.html">경영이념</a></li><li><a href="products.html">제품소개</a></li><li><a href="certifications.html">인증현황</a></li><li><a href="business.html">사업현황</a></li><li><a href="networks.html">글로벌 네트워크</a></li><li><a href="contact.html">문의</a></li>
+    </ul>
+    <a href="contact.html" class="global-nav__contact">문의하기</a>
+    <button class="global-nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="메뉴"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="about.html" onclick="toggleMenu()">회사소개</a><a href="philosophy.html" onclick="toggleMenu()">경영이념</a><a href="products.html" onclick="toggleMenu()">제품소개</a><a href="certifications.html" onclick="toggleMenu()">인증현황</a><a href="business.html" onclick="toggleMenu()">사업현황</a><a href="networks.html" onclick="toggleMenu()">글로벌 네트워크</a><a href="contact.html" onclick="toggleMenu()">문의</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero__inner">
+      <div class="page-hero__breadcrumb"><a href="index.html">Home</a><span>›</span><span>제품소개</span></div>
+      <h1 class="page-hero__headline">제품소개</h1>
+    </div>
+  </div>
+
+  <div class="page-tabs">
+    <div class="page-tabs__inner">
+      <a href="products.html" class="active">제품 라인업</a>
+      <a href="products.html#process">HOT PRESS 공정</a>
+      <a href="products.html#spec">제품 규격</a>
+    </div>
+  </div>
+
+  <section class="section section--light" id="lineup">
+    <div class="section__inner">
+      <div class="section__header fade-up">
+        <p class="section__label">Product Line-up</p>
+        <h2 class="section__title">제품 라인업</h2>
+        <div class="divider"></div>
+        <p class="section__sub">FPCB &amp; PCB 생산공정 중 HOT 프레스 작업에 사용되는 고품질 특수 소재입니다.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1px; border: 1px solid var(--hairline); border-radius: 6px; overflow: hidden;" class="fade-up">
+        <div style="display: grid; grid-template-columns: 200px 1fr 1fr; background: var(--canvas-light); border-bottom: 1px solid var(--hairline);">
+          <div style="padding: 12px 20px; font-size: 12px; font-weight: 700; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em;">제품</div>
+          <div style="padding: 12px 20px; font-size: 12px; font-weight: 700; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em;">용도</div>
+          <div style="padding: 12px 20px; font-size: 12px; font-weight: 700; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em;">규격</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 200px 1fr 1fr; background: var(--canvas); border-bottom: 1px solid var(--hairline); align-items: center;">
+          <div style="padding: 20px; border-right: 1px solid var(--hairline);">
+            <p style="font-size: 13px; font-weight: 700; color: var(--primary); margin-bottom: 4px;">KRAFT PAPER</p>
+            <p style="font-size: 14px; font-weight: 600; color: var(--ink);">기판지</p>
+          </div>
+          <div style="padding: 20px; border-right: 1px solid var(--hairline); font-size: 13px; color: var(--ink-sub); line-height: 1.7;">FPCB &amp; 하드PCB 생산공정 HOT 프레스 작업 시 사용. LAY UP 작업 시 유분흡수 및 완충작용 효과 제공.</div>
+          <div style="padding: 20px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">190G</span>
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">98G</span>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 200px 1fr 1fr; background: var(--canvas); border-bottom: 1px solid var(--hairline); align-items: center;">
+          <div style="padding: 20px; border-right: 1px solid var(--hairline);">
+            <p style="font-size: 13px; font-weight: 700; color: var(--primary); margin-bottom: 4px;">PVC</p>
+            <p style="font-size: 14px; font-weight: 600; color: var(--ink);">PVC 시트</p>
+          </div>
+          <div style="padding: 20px; border-right: 1px solid var(--hairline); font-size: 13px; color: var(--ink-sub); line-height: 1.7;">FPCB 생산공정 HOT 프레스 작업 시 사용. LAY UP 적층순서에 따른 완충작용 효과 제공.</div>
+          <div style="padding: 20px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">0.21T</span>
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">0.25T</span>
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">0.3T</span>
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">0.4T</span>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 200px 1fr 1fr; background: var(--canvas); align-items: center;">
+          <div style="padding: 20px; border-right: 1px solid var(--hairline);">
+            <p style="font-size: 13px; font-weight: 700; color: var(--primary); margin-bottom: 4px;">FILM</p>
+            <p style="font-size: 14px; font-weight: 600; color: var(--ink);">이형 필름</p>
+          </div>
+          <div style="padding: 20px; border-right: 1px solid var(--hairline); font-size: 13px; color: var(--ink-sub); line-height: 1.7;">FPCB 생산공정 HOT 프레스 작업 시 사용. 적층순서에 따른 완충작용으로 정밀 회로 패턴 구현에 기여.</div>
+          <div style="padding: 20px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">25μm</span>
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">45μm</span>
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">50μm</span>
+            <span class="cert-card__badge" style="background: var(--canvas-light); color: var(--ink); border: 1px solid var(--hairline); font-size: 12px;">60μm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray" id="process">
+    <div class="section__inner">
+      <div class="section__header fade-up">
+        <p class="section__label">Manufacturing Process</p>
+        <h2 class="section__title">FPCB HOT PRESS 적층 공정</h2>
+        <div class="divider"></div>
+        <p class="section__sub">각 소재는 아래 순서에 따라 정밀 배치되어 최적의 압착 품질을 실현합니다.</p>
+      </div>
+      <div class="process-wrap fade-up" style="max-width: 700px;">
+        <div class="process-step"><div class="process-step__num">①</div><div class="process-step__title">PVC</div><div class="process-step__desc">최하단 완충층 — 균일한 압력 분산</div></div>
+        <div class="process-step"><div class="process-step__num">②</div><div class="process-step__title">KRAFT PAPER</div><div class="process-step__desc">유분흡수 &amp; 완충 — 기판 오염 방지</div></div>
+        <div class="process-step"><div class="process-step__num">③</div><div class="process-step__title">PVC</div><div class="process-step__desc">중간 완충층 — 추가 압력 보정</div></div>
+        <div class="process-step"><div class="process-step__num">④</div><div class="process-step__title">FILM</div><div class="process-step__desc">이형 필름층 — PCB 표면 보호</div></div>
+        <div class="process-step process-step--highlight"><div class="process-step__num">⑤</div><div class="process-step__title">PCB &amp; FPCB</div><div class="process-step__desc">핵심 기판 — 실제 압착 대상물</div></div>
+        <div class="process-step"><div class="process-step__num">⑥</div><div class="process-step__title">FILM</div><div class="process-step__desc">이형 필름층 — PCB 상면 보호</div></div>
+        <div class="process-step"><div class="process-step__num">⑦</div><div class="process-step__title">FILM</div><div class="process-step__desc">상단 이형층 — 추가 표면 보호</div></div>
+        <div class="process-step"><div class="process-step__num">⑧</div><div class="process-step__title">KRAFT PAPER</div><div class="process-step__desc">최상단 완충층 — 압판 보호</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light" id="spec">
+    <div class="section__inner">
+      <div class="section__header fade-up">
+        <p class="section__label">Specification</p>
+        <h2 class="section__title">제품 규격</h2>
+        <div class="divider"></div>
+        <p class="section__sub">표준 규격 외 고객 요구에 맞춘 맞춤형 SIZE로 양산 가능합니다.</p>
+      </div>
+      <table class="overview-table fade-up" style="max-width: 600px;">
+        <tr><th>Roll 타입</th><td>515mm × 200m — SIZE 변경 양산 가능</td></tr>
+        <tr><th>Sheet 타입</th><td>788mm × 1090mm — 내수용 백상지 PLT 적재, SIZE 변경 가능</td></tr>
+        <tr><th>맞춤 규격</th><td>고객 요청 시 별도 협의 후 양산 가능</td></tr>
+      </table>
+      <div style="margin-top: 28px;" class="fade-up">
+        <a href="contact.html" class="btn btn--primary">맞춤 규격 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer__inner"><div class="footer__top"><div><p class="footer__brand">동양제지산업 DONGYANG PAPER INDUSTRIAL</p><p class="footer__tagline">대표이사: 황승주 &nbsp;|&nbsp; 경기도 안산시 단원구 번영로32번길 29<br>TEL. 031-498-6821 &nbsp;|&nbsp; E-mail. d.yang@daum.net<br>Copyright &copy; 2024 (주)동양제지산업. All rights reserved.</p></div><div><p class="footer__col-title">회사</p><ul class="footer__links"><li><a href="about.html">회사소개</a></li><li><a href="philosophy.html">경영이념</a></li><li><a href="certifications.html">인증현황</a></li></ul></div><div><p class="footer__col-title">제품</p><ul class="footer__links"><li><a href="products.html">Kraft Paper</a></li><li><a href="products.html">PVC</a></li><li><a href="products.html">Film</a></li></ul></div><div><p class="footer__col-title">문의</p><ul class="footer__links"><li><a href="contact.html">온라인 문의</a></li><li><a href="networks.html">글로벌 네트워크</a></li><li><a href="business.html">사업현황</a></li></ul></div></div><p class="footer__legal">(주)동양제지산업 &nbsp;|&nbsp; 베트남 법인: dongyang@dyp2015.com</p></div></footer>
+
+  <script src="nav.js"></script>
+  <script>initNav('products');</script>
+</body>
+</html>
